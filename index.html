@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Future Essex Research Centre</title>
+  <title>Research Hub of Essex</title> <!-- Change this title as needed -->
   <link rel="stylesheet" href="style.css">
   <style>
     body {
@@ -49,16 +49,17 @@
     /* Top-right logo */
     .top-right-logo {
       position: absolute;
-      top: 20px; /* Distance from the top of the page */
+      top: 10px; /* Distance from the top of the page */
       right: 20px; /* Distance from the right side of the page */
       height: 40px; /* Adjust the size as needed */
+      z-index: 2;
     }
 
     /* Top-left logo */
     .top-left-logo {
       position: absolute;
-      top: 20px;
-      left: 20px;
+      top: 10px; /* Distance from the top of the page */
+      left: 20px; /* Distance from the left side of the page */
       height: 40px; /* Adjust as needed */
       z-index: 2;
     }
@@ -79,18 +80,42 @@
 </head>
 
 <body>
-  <!-- Top Right Logo (Clickable, links to the Government Department page) -->
-  <a href="https://www.essex.ac.uk/departments/government" target="_blank">
-    <img src="govlogo.jpeg" alt="Top Right Logo" class="top-right-logo" />
-  </a>
 
-  <!-- Top Left Logo (Clickable, links to the main Essex website) -->
-  <a href="https://www.essex.ac.uk" target="_blank">
-    <img src="essexlogo.png" alt="Top Left Logo" class="top-left-logo" />
-  </a>
+<!-- Top-right logo as a hyperlink -->
+<a href="https://www.essex.ac.uk/departments/government">
+  <img src="govlogo.jpeg" alt="Top Right Logo" class="top-right-logo" />
+</a>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#research">Research</a>
-    <a href="#education">Education</a>
-    <
+<!-- Top-left logo as a hyperlink -->
+<a href="https://www.essex.ac.uk">
+  <img src="essexlogo.png" alt="Top Left Logo" class="top-left-logo" />
+</a>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#education">Education</a>
+  <a href="#training">Training</a>
+  <a href="#impact">Impact</a>
+  <a href="#news">News and Events</a>
+</nav>
+
+<!-- Header -->
+<header>
+  <img src="futurelogo3.png" alt="Future Politics Logo" />
+</header>
+
+<main>
+  <section id="about">
+    <h3>About The Future of Politics</h3>
+    <p><em>The Future of Politics</em> is a research initiative led by the Department of Government at the University of Essex.</p>
+  </section>
+  <!-- Add more sections for Research, Education, etc., using the matching IDs -->
+</main>
+
+<footer>
+  <p>&copy; 2025 The Future of Politics at the University of Essex</p>
+</footer>
+
+</body>
+</html>
