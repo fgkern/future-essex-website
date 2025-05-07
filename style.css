@@ -52,7 +52,7 @@ header img {
   top: 50%; /* Vertically center the logo */
   left: 50%; /* Horizontally center the logo */
   transform: translate(-50%, -50%); /* Adjust for perfect centering */
-  height: 180px; /* Adjust logo size */
+  height: 150px; /* Adjust logo size */
   z-index: 1; /* Ensures the logo appears above the background */
 }
 
