@@ -42,6 +42,28 @@ header {
   border-radius: 0 0 20px 20px;
 }
 
+nav {
+  background-color: #622567; /* Essex Violet */
+  overflow: hidden;
+  text-align: center;
+  padding: 0.5rem 0;
+  border-bottom: 4px solid #ea3424; /* Optional: adds Essex Scarlet accent */
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #4d1b51; /* Slightly darker violet on hover */
+}
+
+
 .logo {
   float: right;
   height: 60px;
