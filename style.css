@@ -7,107 +7,77 @@ body {
 
 /* Navigation Bar */
 nav {
-  background-color: #622567; /* Essex Violet */
-  padding: 10px 0;
-  text-align: center;
-}
-
-.navbar {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar li {
-  display: inline;
-  margin: 0 15px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-header {
-  position: relative; /* Ensures the logo is positioned in front of the image */
-  background-image: url('background1.jpg'); /* Replace with your image file */
-  background-size: cover; /* Ensures the background image covers the entire header area */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  padding: 2rem;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 0 20px 20px;
-  height: 300px; /* Adjust the height of the header */
-}
-
-header img {
-  position: absolute; /* Position the logo in front of the background */
-  top: 50%; /* Vertically center the logo */
-  left: 50%; /* Horizontally center the logo */
-  transform: translate(-50%, -50%); /* Adjust for perfect centering */
-  height: 180px; /* Adjust logo size */
-  z-index: 1; /* Ensures the logo appears above the background */
-}
-
-
-
-nav {
-  background-color: #622567; /* Essex Violet */
+  background-color: black;
   overflow: hidden;
   text-align: center;
   padding: 0.5rem 0;
-  border-bottom: 4px solid #ea3424; /* Optional: adds Essex Scarlet accent */
+  border-bottom: 4px solid #ea3424;
 }
 
 nav a {
   display: inline-block;
-  color: white;
+  color: #f9f9f9;
   text-decoration: none;
   padding: 0.75rem 1.25rem;
   font-weight: bold;
+  font-size: 1.1em;
   transition: background-color 0.3s;
 }
 
 nav a:hover {
-  background-color: #4d1b51; /* Slightly darker violet on hover */
+  background-color: #444;
+  border-radius: 5px;
 }
 
-
-.logo {
-  float: right;
-  height: 60px;
+/* Header with background and logo */
+header {
+  position: relative;
+  background-image: url('background1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
 }
 
+/* Center logo */
+.center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 180px;
+  z-index: 1;
+}
+
+/* Top-right logo */
+.top-right-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 40px;
+  z-index: 2;
+}
+
+/* Top-left logo */
+.top-left-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 40px;
+  z-index: 2;
+}
+
+/* Main content */
 main {
   padding: 2rem;
 }
 
+/* Footer */
 footer {
   background-color: #eee;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
-}
-.absolute-top-right {
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  height: 50px;
-  z-index: 1000; /* Ensure it's on top */
-}
-
-
-.top-left-logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  height: 40px; /* Adjust as needed */
-  z-index: 2;
 }
