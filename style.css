@@ -96,7 +96,7 @@ footer {
   font-size: 0.9rem;
 }
 .absolute-top-right {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 20px;
   height: 50px;
