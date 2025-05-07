@@ -35,26 +35,27 @@ nav {
 }
 
 header {
-  position: relative; /* Make sure the header is positioned relative to its content */
+  position: relative; /* Ensures the logo is positioned in front of the image */
   background-image: url('background1.jpg'); /* Replace with your image file */
-  background-size: cover; /* Ensure the image covers the entire header */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-attachment: fixed; /* Optional: makes the image fixed when scrolling */
+  background-size: cover; /* Ensures the background image covers the entire header area */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
   padding: 2rem;
   text-align: center;
   color: #fff;
   border-radius: 0 0 20px 20px;
+  height: 300px; /* Adjust the height of the header */
 }
 
 header img {
   position: absolute; /* Position the logo in front of the background */
-  top: 50%; /* Center the logo vertically */
-  left: 50%; /* Center the logo horizontally */
-  transform: translate(-50%, -50%); /* Adjust to perfectly center the logo */
-  height: 180px; /* Adjust the logo size as needed */
-  z-index: 1; /* Ensure the logo is above the background image */
+  top: 50%; /* Vertically center the logo */
+  left: 50%; /* Horizontally center the logo */
+  transform: translate(-50%, -50%); /* Adjust for perfect centering */
+  height: 180px; /* Adjust logo size */
+  z-index: 1; /* Ensures the logo appears above the background */
 }
+
 
 
 nav {
