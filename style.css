@@ -8,13 +8,31 @@ body {
 /* Navigation Bar */
 nav {
   background-color: black;
+  position: relative;
   overflow: hidden;
+  padding: 0.75rem 0;
   text-align: center;
-  padding: 0.5rem 0;
   border-bottom: 4px solid #ea3424;
 }
 
-nav a {
+/* Logos inside nav */
+.top-left-logo,
+.top-right-logo {
+  position: absolute;
+  top: 8px;
+  height: 40px;
+  z-index: 2;
+}
+
+.top-left-logo {
+  left: 20px;
+}
+
+.top-right-logo {
+  right: 20px;
+}
+
+.nav-links a {
   display: inline-block;
   color: #f9f9f9;
   text-decoration: none;
@@ -24,12 +42,12 @@ nav a {
   transition: background-color 0.3s;
 }
 
-nav a:hover {
+.nav-links a:hover {
   background-color: #444;
   border-radius: 5px;
 }
 
-/* Header with background and logo */
+/* Header with background and center logo */
 header {
   position: relative;
   background-image: url('background1.jpg');
@@ -41,7 +59,6 @@ header {
   text-align: center;
 }
 
-/* Center logo */
 .center-logo {
   position: absolute;
   top: 50%;
@@ -49,24 +66,6 @@ header {
   transform: translate(-50%, -50%);
   height: 180px;
   z-index: 1;
-}
-
-/* Top-right logo */
-.top-right-logo {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  height: 40px;
-  z-index: 2;
-}
-
-/* Top-left logo */
-.top-left-logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  height: 40px;
-  z-index: 2;
 }
 
 /* Main content */
