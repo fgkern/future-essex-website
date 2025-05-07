@@ -20,7 +20,7 @@ nav {
 .top-right-logo {
   position: absolute;
   top: 8px;
-  height: 35px; /* Smaller logos */
+  height: 45px; /* Smaller logos */
   z-index: 2;
 }
 
