@@ -59,6 +59,23 @@ header {
   text-align: center;
 }
 
+.subheader {
+  position: absolute;
+  top: calc(50% + 100px); /* places it below the logo */
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fffbe0;
+  font-weight: bold;
+  font-size: 1.1rem;
+  background-color: rgba(0, 0, 0, 0.6); /* optional: makes text more readable */
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  max-width: 90%;
+  text-align: center;
+  z-index: 1;
+}
+
+
 .center-logo {
   position: absolute;
   top: 50%;
