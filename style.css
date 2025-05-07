@@ -20,7 +20,7 @@ nav {
 .top-right-logo {
   position: absolute;
   top: 8px;
-  height: 35px;
+  height: 35px; /* Smaller logos */
   z-index: 2;
 }
 
@@ -75,7 +75,7 @@ main {
 
 /* Footer */
 footer {
-  background-color: #eee;
+  background-color: transparent; /* No gray background for footer */
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
