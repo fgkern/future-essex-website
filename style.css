@@ -1,63 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>The Future of Politics at Essex</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- Navigation Bar with corner logos -->
-  <nav>
-    <a href="https://www.essex.ac.uk" target="_blank">
-      <img src="essexlogo2.png" alt="Top Left Logo" class="top-left-logo" />
-    </a>
-    
-    <a href="https://www.essex.ac.uk/departments/government" target="_blank">
-      <img src="govlogo.jpeg" alt="Top Right Logo" class="top-right-logo" />
-    </a>
+/* General body styles */
+body {
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #111;
+}
 
-    <div class="nav-links">
-      <a href="#about">About</a>
-      
-      <!-- Dropdown container for Research -->
-      <div class="dropdown">
-        <a href="#" class="dropbtn">Research &#9662;</a> <!-- Arrow added here -->
-        <div class="dropdown-content">
-          <a href="#">Borders, Belonging, and Global Mobility</a>
-          <a href="#">Fairer Futures</a>
-          <a href="#">Forecasting Political Risk</a>
-          <a href="#">Wealth, Power, and Precarity</a>
-          <a href="#">Governance, Conflict, and Shifting Global Power</a>
-        </div>
-      </div>
+/* Navigation bar */
+nav {
+  background-color: black;
+  padding: 0.75rem 0;
+  text-align: center;
+  position: relative;
+  border-bottom: 4px solid #ea3424;
+}
 
-      <a href="#education">Education</a>
-      <a href="#training">Training</a>
-      <a href="#impact">Impact</a>
-      <a href="#news">News and Events</a>
-    </div>
-  </nav>
+.top-left-logo,
+.top-right-logo {
+  position: absolute;
+  top: 8px;
+  height: 45px;
+  z-index: 2;
+}
 
-  <!-- Header with center logo -->
-  <header>
-    <img src="futurelogo3-modified.png" alt="Future Politics Logo" class="center-logo" />
-  </header>
+.top-left-logo {
+  left: 20px;
+}
 
-  <!-- Sub-header -->
-  <div class="sub-header">
-    Understanding governance and the public good in uncertain times
-  </div>
+.top-right-logo {
+  right: 20px;
+}
 
-  <main>
-    <section id="about">
-      <p><em>The Future of Politics</em>, led by the Department of Government at the University of Essex, seeks to study, understand and shape the future of politics in the United Kingdom and around the globe.
-      Established in 2025, we are academics and practitioners working in politics and international relations using methodologically diverse approaches to understand how politics is changing, and how it can change for the better. </p>
-    </section>
-  </main>
+.nav-links a,
+.dropbtn {
+  display: inline-block;
+  color: #f9f9f9;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  font-weight: bold;
+  font-size: 1.1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
-  <footer>
-    <p>&copy; 2025 The Future of Politics at the University of Essex</p>
-  </footer>
+.nav-links a:hover,
+.dropbtn:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
 
-</body>
-</html>
+/* Dropdown Menu */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 250px;
+  z-index: 1;
+  text-align: left;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Header section */
+header {
+  position: relative;
+  background-image: url('background1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  text-align: center;
+}
+
+.center-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 180px;
+}
+
+/* Sub-header */
+.sub-header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* Main content */
+main {
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+/* Footer */
+footer {
+  background-color: transparent;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
