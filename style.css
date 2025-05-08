@@ -61,7 +61,7 @@ header {
 
 .sub-header {
   background-color: #000;       /* Black background */
-  color: #fffbe0;               /* Off-white text */
+  color: #111;               /* Off-white text */
   text-align: center;
   padding: 1.2rem;
   font-size: 2rem;
