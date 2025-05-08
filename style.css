@@ -59,15 +59,13 @@ header {
   text-align: center;
 }
 
-/* Sub-header */
 .sub-header {
-  background-color: #ffffff;
-  color: #000000;
+  background-color: #000;       /* Black background */
+  color: #fffbe0;               /* Off-white text */
   text-align: center;
-  font-size: 2rem;
+  padding: 1.2rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #ccc;
 }
 
 
