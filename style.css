@@ -143,6 +143,11 @@ footer {
   margin-top: 2rem;
 }
 
+/* Publications section header alignment */
+.publications-section h2 {
+  text-align: left;
+}
+
 .publications-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
