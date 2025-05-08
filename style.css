@@ -13,7 +13,7 @@ nav {
   overflow: hidden;
   padding: 0.75rem 0;
   text-align: center;
-  border-bottom: 4px solid #ea3424;
+  border-bottom: 4px solid #8A2BE2; /* Violet border under navbar */
 }
 
 /* Logos inside nav */
@@ -120,7 +120,7 @@ header {
 .sub-header {
   background-color: black;
   color: white;
-  font-size: 2rem;
+  font-size: 1.25rem;
   font-weight: bold;
   padding: 1rem;
   text-align: center;
@@ -143,9 +143,8 @@ footer {
   margin-top: 2rem;
 }
 
-/* Publications section header alignment */
 .publications-section h2 {
-  text-align: left;
+  text-align: right;
 }
 
 .publications-grid {
@@ -163,14 +162,14 @@ footer {
 }
 
 .publication-card h3 a {
-  color: #000;
+  color: #8A2BE2; /* Violet color for titles */
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
 }
 
 .publication-card h3 a:hover {
-  color: #ea3424;
+  color: #6A1B9A; /* Darker violet color on hover */
 }
 
 .publication-image {
@@ -196,7 +195,7 @@ footer {
 
 .read-more {
   text-decoration: none;
-  color: #ea3424;
+  color: #8A2BE2; /* Violet color for "Read more" */
   font-weight: bold;
 }
 
