@@ -4,153 +4,7 @@
   <meta charset="UTF-8">
   <title>The Future of Politics at Essex</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: Helvetica, Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #111;
-    }
-
-    /* Navigation Bar */
-    nav {
-      background-color: black;
-      position: relative;
-      overflow: hidden;
-      padding: 0.75rem 0;
-      text-align: center;
-      border-bottom: 4px solid #ea3424;
-    }
-
-    .top-left-logo,
-    .top-right-logo {
-      position: absolute;
-      top: 8px;
-      height: 45px;
-      z-index: 2;
-    }
-
-    .top-left-logo {
-      left: 20px;
-    }
-
-    .top-right-logo {
-      right: 20px;
-    }
-
-    .nav-links a {
-      display: inline-block;
-      color: #f9f9f9;
-      text-decoration: none;
-      padding: 0.75rem 1.25rem;
-      font-weight: bold;
-      font-size: 1.1em;
-      transition: background-color 0.3s;
-    }
-
-    .nav-links a:hover {
-      background-color: #444;
-      border-radius: 5px;
-    }
-
-    /* Header */
-    header {
-      position: relative;
-      background-image: url('background1.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 300px;
-      text-align: center;
-    }
-
-    .center-logo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 180px;
-      z-index: 1;
-    }
-
-    /* Sub-header */
-    .sub-header {
-      background-color: black;
-      color: white;
-      text-align: center;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      font-weight: bold;
-    }
-
-    /* Main content */
-    main {
-      padding: 2rem;
-    }
-
-    /* Research dropdown styles */
-    #research {
-      margin-top: 2rem;
-      text-align: center;
-    }
-
-    .dropdown-container {
-      width: 100%;
-      max-width: 700px;
-      margin: 1rem auto;
-      text-align: center;
-    }
-
-    .dropdown-toggle {
-      background-color: black;
-      color: white;
-      border: none;
-      padding: 0.8rem 1.2rem;
-      font-size: 1.1rem;
-      font-weight: bold;
-      cursor: pointer;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-
-    .dropdown-toggle:hover {
-      background-color: #333;
-    }
-
-    .dropdown-menu {
-      display: none;
-      background-color: #f9f9f9;
-      margin-top: 0.5rem;
-      border-radius: 5px;
-      overflow: hidden;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .dropdown-item {
-      padding: 0.75rem 1rem;
-      border-bottom: 1px solid #ddd;
-      text-align: left;
-      font-weight: 500;
-    }
-
-    .dropdown-item:last-child {
-      border-bottom: none;
-    }
-
-    .dropdown-container.active .dropdown-menu {
-      display: block;
-    }
-
-    /* Footer */
-    footer {
-      background-color: transparent;
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-    }
-  </style>
 </head>
-
 <body>
   <!-- Navigation Bar with corner logos -->
   <nav>
@@ -164,7 +18,18 @@
 
     <div class="nav-links">
       <a href="#about">About</a>
-      <a href="#research">Research</a>
+      
+      <div class="dropdown">
+        <a href="#research">Research</a>
+        <div class="dropdown-content">
+          <a href="#borders">Borders, Belonging, and Global Mobility</a>
+          <a href="#fairer">Fairer Futures</a>
+          <a href="#forecasting">Forecasting Political Risk</a>
+          <a href="#wealth">Wealth, Power, and Precarity</a>
+          <a href="#governance">Governance, Conflict, and Shifting Global Power</a>
+        </div>
+      </div>
+
       <a href="#education">Education</a>
       <a href="#training">Training</a>
       <a href="#impact">Impact</a>
@@ -187,31 +52,11 @@
       <p><em>The Future of Politics</em>, led by the Department of Government at the University of Essex, seeks to study, understand and shape the future of politics in the United Kingdom and around the globe.
       Established in 2025, we are academics and practitioners working in politics and international relations using methodologically diverse approaches to understand how politics is changing, and how it can change for the better. </p>
     </section>
-
-    <section id="research">
-      <h3>Research</h3>
-
-      <div class="dropdown-container">
-        <button class="dropdown-toggle">Explore Research Themes &#9662;</button>
-        <div class="dropdown-menu">
-          <div class="dropdown-item">Borders, Belonging, and Global Mobility</div>
-          <div class="dropdown-item">Fairer Futures</div>
-          <div class="dropdown-item">Forecasting Political Risk</div>
-          <div class="dropdown-item">Wealth, Power, and Precarity</div>
-          <div class="dropdown-item">Governance, Conflict, and Shifting Global Power</div>
-        </div>
-      </div>
-    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 The Future of Politics at the University of Essex</p>
   </footer>
 
-  <script>
-    document.querySelector('.dropdown-toggle').addEventListener('click', function() {
-      document.querySelector('.dropdown-container').classList.toggle('active');
-    });
-  </script>
 </body>
 </html>
