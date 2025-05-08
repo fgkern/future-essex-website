@@ -47,6 +47,44 @@ nav {
   border-radius: 5px;
 }
 
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #111;
+  min-width: 300px;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: white;
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+  font-size: 1em;
+}
+
+/* Hover effect */
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 /* Header with background and center logo */
 header {
   position: relative;
