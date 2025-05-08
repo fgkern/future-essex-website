@@ -10,10 +10,11 @@ body {
 nav {
   background-color: black;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding: 0.75rem 0;
   text-align: center;
   border-bottom: 4px solid #8A2BE2; /* Violet border under navbar */
+  z-index: 1000; /* Ensures dropdowns appear above everything */
 }
 
 /* Logos inside nav */
@@ -21,7 +22,7 @@ nav {
 .top-right-logo {
   position: absolute;
   top: 8px;
-  height: 45px; /* Smaller logos */
+  height: 45px;
   z-index: 2;
 }
 
@@ -74,9 +75,10 @@ nav {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  z-index: 1;
+  z-index: 999;
   left: 0;
   border-radius: 5px;
+  top: 100%; /* Ensures it drops below the button */
 }
 
 .dropdown-content a {
@@ -90,12 +92,11 @@ nav {
   background-color: #ddd;
 }
 
-/* Show the dropdown menu when hovering */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Header with background and center logo */
+/* Header */
 header {
   position: relative;
   background-image: url('background1.jpg');
@@ -105,6 +106,7 @@ header {
   height: 300px;
   border-radius: 0 0 20px 20px;
   text-align: center;
+  z-index: 0;
 }
 
 .center-logo {
@@ -116,7 +118,7 @@ header {
   z-index: 1;
 }
 
-/* Sub-header styling */
+/* Sub-header */
 .sub-header {
   background-color: black;
   color: white;
@@ -144,13 +146,16 @@ footer {
 }
 
 .publications-section h2 {
-  text-align: left;
+  text-align: right;
+  color: #8A2BE2;
+  font-size: 2rem;
 }
 
 .publications-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  align-items: stretch;
 }
 
 .publication-card {
@@ -159,25 +164,29 @@ footer {
   border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Fixed-size image for uniformity */
+.publication-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .publication-card h3 a {
-  color: #8A2BE2; /* Violet color for titles */
+  color: #8A2BE2;
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
 }
 
 .publication-card h3 a:hover {
-  color: #6A1B9A; /* Darker violet color on hover */
-}
-
-.publication-image {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 1rem;
+  color: #6A1B9A;
 }
 
 .publication-author,
@@ -191,12 +200,14 @@ footer {
 .publication-excerpt {
   font-size: 1.1rem;
   color: #333;
+  flex-grow: 1;
 }
 
 .read-more {
   text-decoration: none;
-  color: #8A2BE2; /* Violet color for "Read more" */
+  color: #8A2BE2;
   font-weight: bold;
+  margin-top: auto;
 }
 
 .read-more:hover {
