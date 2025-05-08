@@ -9,10 +9,11 @@ body {
 nav {
   background-color: black;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding: 0.75rem 0;
   text-align: center;
   border-bottom: 4px solid #ea3424;
+  z-index: 10;
 }
 
 /* Logos inside nav */
@@ -20,8 +21,8 @@ nav {
 .top-right-logo {
   position: absolute;
   top: 8px;
-  height: 45px; /* Smaller logos */
-  z-index: 2;
+  height: 45px;
+  z-index: 20;
 }
 
 .top-left-logo {
@@ -32,64 +33,63 @@ nav {
   right: 20px;
 }
 
-.nav-links a {
+/* Nav links and dropdown buttons */
+.nav-links {
+  display: inline-block;
+  z-index: 15;
+}
+
+.nav-links a,
+.dropbtn {
   display: inline-block;
   color: #f9f9f9;
   text-decoration: none;
   padding: 0.75rem 1.25rem;
   font-weight: bold;
   font-size: 1.1em;
+  background: none;
+  border: none;
+  cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.nav-links a:hover {
-  background-color: #444;
-  border-radius: 5px;
-}
-
-/* Dropdown Menu */
-.dropdown {
-  display: inline-block;
-  position: relative;
-}
-
-.dropbtn {
-  color: #f9f9f9;
-  background-color: black;
-  font-size: 1.1em;
-  padding: 0.75rem 1.25rem;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-}
-
+.nav-links a:hover,
 .dropbtn:hover {
   background-color: #444;
   border-radius: 5px;
 }
 
+/* Dropdown containers */
+.dropdown {
+  display: inline-block;
+  position: relative;
+  z-index: 20;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  z-index: 1;
+  background-color: #111;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 30;
+  top: 100%;
   left: 0;
-  border-radius: 5px;
+  border-radius: 0 0 8px 8px;
 }
 
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  background-color: #111;
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: #444;
 }
 
-/* Show the dropdown menu when hovering */
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -102,8 +102,9 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 300px;
-  border-radius: 0 0 20px 20px;
   text-align: center;
+  border-radius: 0; /* Removed rounded corners */
+  z-index: 1;
 }
 
 .center-logo {
@@ -112,7 +113,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   height: 180px;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Sub-header styling */
@@ -123,11 +124,11 @@ header {
   font-weight: bold;
   padding: 1rem;
   text-align: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
 }
 
 main {
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 footer {
