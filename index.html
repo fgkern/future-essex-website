@@ -6,14 +6,17 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation Bar with corner logos -->
   <nav>
     <a href="https://www.essex.ac.uk" target="_blank">
       <img src="essexlogo2.png" alt="Top Left Logo" class="top-left-logo" />
     </a>
-
+    
     <div class="nav-links">
+      <!-- Home link -->
       <a href="index.html">Home</a>
 
+      <!-- About dropdown -->
       <div class="dropdown">
         <button class="dropbtn">About ▾</button>
         <div class="dropdown-content">
@@ -22,6 +25,7 @@
         </div>
       </div>
 
+      <!-- Research dropdown -->
       <div class="dropdown">
         <button class="dropbtn">Research ▾</button>
         <div class="dropdown-content">
@@ -39,6 +43,7 @@
         </div>
       </div>
 
+      <!-- Education dropdown -->
       <div class="dropdown">
         <button class="dropbtn">Education ▾</button>
         <div class="dropdown-content">
@@ -49,6 +54,7 @@
         </div>
       </div>
 
+      <!-- Regular links -->
       <a href="#training">Training</a>
       <a href="#impact">Impact</a>
       <a href="#news">News and Events</a>
@@ -59,15 +65,50 @@
     </a>
   </nav>
 
-  <!-- Header -->
+  <!-- Header with center logo -->
   <header>
     <img src="futurelogo3-modified.png" alt="Future Politics Logo" class="center-logo" />
   </header>
 
+  <!-- Sub-header -->
   <div class="sub-header">
     Understanding governance and the public good in uncertain times
   </div>
 
-  <!-- Main content and rest of page omitted for brevity -->
+  <main>
+    <section id="about">
+      <p><em>The Future of Politics</em>, based at the Department of Government at the University of Essex, seeks to study, understand and shape the future of politics in the United Kingdom and around the globe.
+      We are academics and practitioners working in politics and international relations using methodologically diverse approaches to understand how politics is changing, and how it can change for the better.</p>
+    </section>
+
+    <section id="publications" class="publications-section">
+      <h2>Publications and Working Papers</h2>
+      <div class="publications-grid">
+        <!-- Publication 1 -->
+        <article class="publication-card">
+          <img src="montanaropaper1.jpg" alt="Publication Image" class="publication-image" />
+          <h3><a href="#">The antidemocratic harms of mansplaining</a></h3>
+          <p class="publication-author">Laura Montanaro</p>
+          <p class="publication-date">October 2024</p>
+          <p class="publication-excerpt">This paper considers mansplaining and its harms from the perspective of democratic theory.</p>
+          <a href="#" class="read-more">Read more</a>
+        </article>
+
+        <!-- Publication 2 -->
+        <article class="publication-card">
+          <img src="kernpaper1.jpg" alt="Publication Image" class="publication-image" />
+          <h3><a href="#">Foreign policy congruence in Africa: Evidence on free movement and free trade</a></h3>
+          <p class="publication-author">Florian G. Kern, Martin C. Steinwand, Samira Diebire</p>
+          <p class="publication-date">April 2025</p>
+          <p class="publication-excerpt">In unexpected ways, government action does not align with citizen preferences in Africa.</p>
+          <a href="#" class="read-more">Read more</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 The Future of Politics at the University of Essex</p>
+  </footer>
 </body>
 </html>
