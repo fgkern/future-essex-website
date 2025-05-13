@@ -271,3 +271,42 @@ footer {
 .read-more:hover {
   text-decoration: underline;
 }
+
+/* PEOPLE SECTION */
+.people-section {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.people-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.person-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.person-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+}
+
+.person-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+  color: #111;
+}
+
+.person-role {
+  font-size: 1rem;
+  color: #555;
+}
