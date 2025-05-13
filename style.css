@@ -167,6 +167,10 @@ header {
   z-index: 0;
 }
 
+.people-header {
+  background-image: url('people-banner.jpg'); /* replace with your image file */
+}
+
 .center-logo {
   position: absolute;
   top: 50%;
