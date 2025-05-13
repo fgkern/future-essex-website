@@ -64,7 +64,7 @@ nav {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  z-index: 999;
+  z-index: 3000;
   left: 0;
   border-radius: 5px;
   top: 100%;
@@ -189,6 +189,9 @@ header {
 main {
   padding: 1rem;
   font-size: 1.25rem;
+  overflow: visible; /* Ensure dropdowns are visible */
+  position: relative;
+  z-index: 1; /* Ensure stacking context */
 }
 
 /* Footer */
