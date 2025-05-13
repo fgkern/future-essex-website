@@ -15,8 +15,8 @@ nav {
   justify-content: space-between;
   padding: 0.75rem 1rem;
   border-bottom: 4px solid #8A2BE2;
-  z-index: 1000;
   position: relative;
+  z-index: 9999;
 }
 
 /* Logos inside nav */
@@ -64,10 +64,11 @@ nav {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  z-index: 3000;
-  left: 0;
-  border-radius: 5px;
   top: 100%;
+  left: 0;
+  z-index: 9999;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .dropdown-content a {
@@ -103,8 +104,8 @@ nav {
   background-color: #f9f9f9;
   min-width: 220px;
   border-radius: 5px;
-  z-index: 1000;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  z-index: 9999;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-submenu:hover .submenu-content {
@@ -142,10 +143,7 @@ nav {
     margin-bottom: 0.5rem;
   }
 
-  .dropdown-content {
-    position: static;
-  }
-
+  .dropdown-content,
   .submenu-content {
     position: static;
     box-shadow: none;
@@ -189,9 +187,8 @@ header {
 main {
   padding: 1rem;
   font-size: 1.25rem;
-  overflow: visible; /* Ensure dropdowns are visible */
   position: relative;
-  z-index: 1; /* Ensure stacking context */
+  z-index: 1;
 }
 
 /* Footer */
