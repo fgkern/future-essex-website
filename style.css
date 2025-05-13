@@ -46,7 +46,11 @@ nav {
   background: none;
   cursor: pointer;
   white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
 }
+
 
 .nav-links a:hover,
 .dropbtn:hover {
