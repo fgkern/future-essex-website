@@ -341,3 +341,13 @@ footer {
   border-radius: 8px;
   border: 1px solid #ccc;
 }
+/* Blue hyperlink styling */
+a.blue-link {
+  color: #4169E1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.blue-link:hover {
+  text-decoration: underline;
+}
