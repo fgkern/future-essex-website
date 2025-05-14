@@ -14,7 +14,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 1rem;
-  border-bottom: 4px solid #007BFF;
+  border-bottom: 4px solid #4169E1;
   position: relative;
   z-index: 9999;
 }
@@ -213,7 +213,7 @@ footer {
 
 .publications-section h2 {
   text-align: left;
-  color: #007BFF;
+  color: #4169E1;
   font-size: 2rem;
 }
 
@@ -244,14 +244,14 @@ footer {
 }
 
 .publication-card h3 a {
-  color: #007BFF;
+  color: #4169E1;
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
 }
 
 .publication-card h3 a:hover {
-  color: #0056b3;
+  color: #27408B;
 }
 
 .publication-author,
@@ -270,7 +270,7 @@ footer {
 
 .read-more {
   text-decoration: none;
-  color: #007BFF;
+  color: #4169E1;
   font-weight: bold;
   margin-top: auto;
 }
@@ -320,7 +320,7 @@ footer {
 
 /* Section Header Styling */
 .section-heading {
-  color: #007BFF;
+  color: #4169E1;
   font-size: 2rem;
   text-align: left;
   margin-top: 2rem;
