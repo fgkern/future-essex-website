@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research Themes</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Research Themes – The Future of Politics</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Navigation Bar -->
   <nav>
-    <img src="logo-left.png" class="top-left-logo" alt="Logo Left">
+    <a href="https://www.essex.ac.uk" target="_blank">
+      <img src="essexlogo2.png" alt="Top Left Logo" class="top-left-logo" />
+    </a>
+
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="people.html">People</a>
-      <a href="themes.html" class="active">Research Themes</a>
-      <a href="publications.html">Publications</a>
+      <div class="dropdown">
+        <button class="dropbtn">About ▾</button>
+        <div class="dropdown-content">
+          <a href="people.html">People</a>
+          <a href="#partners">Partners</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Research ▾</button>
+        <div class="dropdown-content">
+          <a href="themes.html">Research Themes</a>
+          <a href="#publications">Publications and Working Papers</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Education ▾</button>
+        <div class="dropdown-content">
+          <a href="#politicalscience">The Future of Political Science Education</a>
+          <a href="#undergrad">Undergraduate study</a>
+          <a href="#masters">Master's study</a>
+          <a href="#phd">PhD study</a>
+        </div>
+      </div>
+
+      <a href="#training">Training</a>
+      <a href="#impact">Impact</a>
+      <a href="#news">News and Events</a>
     </div>
-    <img src="logo-right.png" class="top-right-logo" alt="Logo Right">
+
+    <a href="https://www.essex.ac.uk/departments/government" target="_blank">
+      <img src="govlogo.jpeg" alt="Top Right Logo" class="top-right-logo" />
+    </a>
   </nav>
 
-  <header class="people-header">
-    <img src="center-logo.png" alt="Center Logo" class="center-logo">
+  <!-- Header -->
+  <header>
+    <img src="futurelogo3-modified.png" alt="Center Logo" class="center-logo" />
   </header>
 
-  <div class="sub-header">Research Themes</div>
+  <!-- Sub-header -->
+  <div class="sub-header">
+    Research Themes
+  </div>
 
+  <!-- Main content -->
   <main>
     <section class="people-section">
-      <div class="section-heading">The Five Future of Politics Research Themes</div>
+      <h2 class="section-heading">The Five Future of Politics Research Themes</h2>
       <div class="themes-grid">
-        <div class="theme-placeholder">
-          <img src="bbgm.png" alt="Theme 1">
-        </div>
-        <div class="theme-placeholder">
-          <img src="ff.png" alt="Theme 2">
-        </div>
-        <div class="theme-placeholder">
-          <img src="fpr.png.jpg" alt="Theme 3">
-        </div>
-        <div class="theme-placeholder">
-          <img src="gcsgp.png" alt="Theme 4">
-        </div>
-        <div class="theme-placeholder">
-          <img src="wpp.png" alt="Theme 5">
-        </div>
+        <div class="theme-placeholder"><img src="theme1.jpg" alt="Theme 1" /></div>
+        <div class="theme-placeholder"><img src="theme2.jpg" alt="Theme 2" /></div>
+        <div class="theme-placeholder"><img src="theme3.jpg" alt="Theme 3" /></div>
+        <div class="theme-placeholder"><img src="theme4.jpg" alt="Theme 4" /></div>
+        <div class="theme-placeholder"><img src="theme5.jpg" alt="Theme 5" /></div>
       </div>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Future of Politics. All rights reserved.
+    <p>&copy; 2025 Future of Politics. All rights reserved.</p>
   </footer>
 </body>
 </html>
