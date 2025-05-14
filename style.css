@@ -51,7 +51,6 @@ nav {
   height: 100%;
 }
 
-
 .nav-links a:hover,
 .dropbtn:hover {
   background-color: #444;
@@ -168,7 +167,7 @@ header {
 }
 
 .people-header {
-  background-image: url('people.png'); /* replace with your image file */
+  background-image: url('people.png');
 }
 
 .center-logo {
@@ -214,7 +213,7 @@ footer {
 
 .publications-section h2 {
   text-align: left;
-  color: #8A2BE2;
+  color: #007BFF;
   font-size: 2rem;
 }
 
@@ -245,14 +244,14 @@ footer {
 }
 
 .publication-card h3 a {
-  color: #8A2BE2;
+  color: #007BFF;
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
 }
 
 .publication-card h3 a:hover {
-  color: #6A1B9A;
+  color: #0056b3;
 }
 
 .publication-author,
@@ -271,7 +270,7 @@ footer {
 
 .read-more {
   text-decoration: none;
-  color: #8A2BE2;
+  color: #007BFF;
   font-weight: bold;
   margin-top: auto;
 }
@@ -321,7 +320,7 @@ footer {
 
 /* Section Header Styling */
 .section-heading {
-  color: #8A2BE2;
+  color: #007BFF;
   font-size: 2rem;
   text-align: left;
   margin-top: 2rem;
@@ -342,4 +341,3 @@ footer {
   border-radius: 8px;
   border: 1px solid #ccc;
 }
-
