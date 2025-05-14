@@ -14,7 +14,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 0.75rem 1rem;
-  border-bottom: 4px solid #4169E1;
+  border-bottom: 4px solid #0041C2;
   position: relative;
   z-index: 9999;
 }
@@ -213,7 +213,7 @@ footer {
 
 .publications-section h2 {
   text-align: left;
-  color: #4169E1;
+  color: #0041C2;
   font-size: 2rem;
 }
 
@@ -244,7 +244,7 @@ footer {
 }
 
 .publication-card h3 a {
-  color: #4169E1;
+  color: #0041C2;
   font-size: 1.5rem;
   text-decoration: none;
   font-weight: bold;
@@ -270,7 +270,7 @@ footer {
 
 .read-more {
   text-decoration: none;
-  color: #4169E1;
+  color: #0041C2;
   font-weight: bold;
   margin-top: auto;
 }
@@ -320,7 +320,7 @@ footer {
 
 /* Section Header Styling */
 .section-heading {
-  color: #4169E1;
+  color: #0041C2;
   font-size: 2rem;
   text-align: left;
   margin-top: 2rem;
@@ -343,7 +343,7 @@ footer {
 }
 /* Blue hyperlink styling */
 a.blue-link {
-  color: #4169E1;
+  color: #0041C2;
   font-weight: bold;
   text-decoration: none;
 }
