@@ -318,3 +318,28 @@ footer {
   font-size: 1rem;
   color: #555;
 }
+
+/* Section Header Styling */
+.section-heading {
+  color: #8A2BE2;
+  font-size: 2rem;
+  text-align: left;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Grid Layout for Themes */
+.themes-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.theme-placeholder img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
