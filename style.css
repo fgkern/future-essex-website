@@ -303,6 +303,7 @@ footer {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center 35%; /* nudges image down slightly */
   margin-bottom: 0.75rem;
 }
 
