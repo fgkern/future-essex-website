@@ -7,6 +7,8 @@ body {
   font-weight: 400;
   background-color: #f9f9f9;
   color: #111;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 /* Navigation Bar */
