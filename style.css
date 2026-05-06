@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* General body styles */
 body {
   margin: 0;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Archivo', Helvetica, Arial, sans-serif;
+  font-weight: 400;
   background-color: #f9f9f9;
   color: #111;
 }
@@ -39,7 +42,7 @@ nav {
   color: #f9f9f9;
   text-decoration: none;
   padding: 0.75rem 1.25rem;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.1em;
   transition: background-color 0.3s;
   border: none;
@@ -184,7 +187,8 @@ header {
   background-color: black;
   color: white;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 900;
+  font-family: 'Archivo', Helvetica, Arial, sans-serif;
   padding: 1rem;
   text-align: center;
   margin-bottom: 0.5rem;
@@ -215,6 +219,7 @@ footer {
   text-align: left;
   color: #0041C2;
   font-size: 2rem;
+  font-weight: 900;
 }
 
 .publications-grid {
@@ -247,7 +252,7 @@ footer {
   color: #0041C2;
   font-size: 1.5rem;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .publication-card h3 a:hover {
@@ -308,7 +313,7 @@ footer {
 }
 
 .person-name {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.2rem;
   margin-bottom: 0.25rem;
   color: #111;
@@ -323,6 +328,7 @@ footer {
 .section-heading {
   color: #0041C2;
   font-size: 2rem;
+  font-weight: 900;
   text-align: left;
   margin-top: 2rem;
   margin-bottom: 1rem;
